@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html >
+<head lang = "en" >
+  <!--<meta charset = "UTF-8" >-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title >Grid Layout Template: Super Cars</title >
+
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+  <!-----=====| Bootstrap CSS |=====----->
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" >
+  <!-----=====| Fonts CSS |=====----->
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel" rel = "stylesheet" type = "text/css" >
+  <link href = 'https://fonts.googleapis.com/css?family=Cinzel:400,700' rel = 'stylesheet' type = 'text/css' >
+  <link href = 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel = 'stylesheet' type = 'text/css' >
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind+Vadodara:400,300,500,600,700' rel='stylesheet'
+        type='text/css'>
+  <!-----=====| Custom CSS |=====----->
+  <link rel = "stylesheet" href = "egoista.css" />
+
+  <!--==============================| INLINE STYLE |==============================-->
+
+
+</head >
+<!--==============================|   BODY START   |==============================-->
+<body >
+
+<!-----=====| Top Banner: Header and descriptions |=====----->
+<div class = "container-fluid" >
+  <div class = "row" >
+    <div class = "col-sm-12" >
+      <div class="headerBikeBG">
+        <!--<img src = "images/blackBike.jpg" alt = "" />-->
+      </div>
+    </div >
+  </div >
+  </div>
+<div class = "container" >
+  <div class = "row" >
+    <div class = "col-sm-12" >
+      <h1 >EGOISTA</h1 >
+    </div >
+    <div class = "col-sm-12" >
+      <h3 >Lamborghini 50th Anniversary</h3 >
+    </div >
+  </div >
+  <div class = "row" >
+    <div class = "col-sm-6" >
+      <p >
+        This car has been created with only one thing in mind ... building a Lamborghini that empasises what the
+        Raging Bull is all about, a passion to be unconventional and be innovative when it comes to being selfish
+        this is the right car for ... only one person can use it, there is no passenger seat, the Egoista is meant
+        for those that can appreciate something alternative, something no other make offers ... Lamborghini once again sets a benchmark in the automotive ... or as Stephan Winkelmann stated earlier: <i>"always different ... always Lamborghini"</i>
+        <br />
+      </p >
+      <!--<h4 >Egoista Engine</h4 >
+      <p>
+        The engine choice for this very special concept is the 5.2 liter V10 unit also found inside the current Gallardo model range, however for the Egoista power output has been raised to 600hp ... a figure we already heard about for the Gallardo successor too, could the Egoista be a test bed for the successor's engine?
+      </p >-->
+    </div >
+    <!--<div class = "col-sm-6" >
+      <h4 >Egoista Styling</h4 >
+      <p >
+        The styling for the Lamborghini Egoista is very extreme and boast totally unique characteristics like the front which resembles a charging Bull with the horns pointed forward ... the styling has been executed by Walter De Silva's design team (Mr De Silva is still Head of Design for the Volkswagen Group), for the angular exterior design we can thank Alessandro Dambrosio while the bright orange interior has been put together by Stefan Sielaff.
+        <br />
+        The cockpit section is made from carbon fiber and aluminum, but that's not even the most impressive fact ...
+        actually the entire unit has been created as a tailor made suit offering the utmost driving pleasure pushing performance and style to new heights.
+        <br /><br />
+        Only one Egoista has been made and it is not for sale ... the Lamborghini Egoista will remain a dream ... a very special dream.
+      </p >
+    </div >-->
+  </div >
+</div >
+
+<!-----=====| Grid Layout: Dynamically Populated |=====----->
+<div class = "container" >
+  <div class = "row" >
+
+    <div class = "col-md-12" id = "imagesContainer" >
+      <div class="topBar"></div>
+      <!-- Images dynamically place here -->
+      <!--<div class = "imgClass" ></div>-->
+    </div >
+
+  </div >
+</div >
+
+<!-----=====| Modal with Carousel |=====----->
+<div tabindex = "-1" class = "modal fade" id = "myModal" role = "dialog" aria-hidden = "true" aria-labelledby =
+  "myModalLabel" >
+  <div class = "modal-dialog" >
+    <div class = "modal-content" >
+
+      <!------------=====| Modal Header |=====------------>
+      <!--<div class = "modal-header" >
+        &lt;!&ndash;<button class = "close" type = "button" data-dismiss = "modal" ><i class = "glyphicon glyphicon-remove-circle" ></i >
+        </button >&ndash;&gt;
+        &lt;!&ndash;<h3 class = "modal-title" >MODAL TITLE</h3 >&ndash;&gt;
+      </div >-->
+
+      <!------------=====| Modal Body with Carousel |=====------------>
+      <div class = "container-fluid" >
+        <div class = "modal-body" id = "modalImgId" >
+          <button class = "close" type = "button" data-dismiss = "modal" >
+            <!--<span class="closeText">X</span>-->
+            <i class = "glyphicon glyphicon-remove-circle" ></i >
+          </button >
+          <!--| Carousel |-->
+          <div class = "carousel" id = "modalCarousel" >
+            <div class = "carousel-inner" role = "listbox" id = "carouslInnerId" >
+              <!--carousel-inner gets populated dynamically-->
+              <!--<div class="item active">
+                <img src = "images/bikerChix20.jpg" alt = "Biker Chicks" />
+                <div class="carousel-caption">Biker 9</div>
+              </div>-->
+              <!--<div class="item">
+                <img src = "images/bikerChix1.jpg" alt = "Biker Chicks" />
+                <div class="carousel-caption">Biker 10</div>
+              </div>-->
+
+            </div >
+            <!-- Navigation -->
+            <!--<a class="carousel-control left" href="#modalCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#modalCarousel" data-slide="next">&rsaquo;</a>-->
+
+            <a class = "carousel-control left" href = "#modalCarousel" data-slide = "prev" >
+              <i class = "glyphicon glyphicon-chevron-left" ></i >
+              <!--<span class="arrowText">&lsaquo;</span>-->
+            </a >
+            <a class = "carousel-control right" href = "#modalCarousel" data-slide = "next" >
+              <i class = "glyphicon glyphicon-chevron-right" ></i >
+              <!--<span class="arrowText">&rsaquo;</span>-->
+            </a >
+          </div >
+        </div >
+      </div >
+
+      <!------------=====| Modal Footer |=====------------>
+      <!--<div class="modal-footer">
+        <h5 class = "modal-description footer" >Modal Description</h5 >
+      </div>-->
+    </div >
+  </div >
+</div >
+
+<br />
+
+<!-----=====| Footer |=====----->
+<div class="container">
+  <div class="footerBox">
+    <div class="h4footer ">Lamborghini Egoista</div>
+  </div>
+</div>
+
+<!--============================================| JAVASCRIPTS |============================================-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script >
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" ></script >
+<!-----=====| GSAP TweenMax and PlugIns: Nov 23, 2015 |=====----->
+<!--<script src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>-->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ColorPropsPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSRulePlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/EaselPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/TextPlugin.min.js" ></script >
+<!-----=====| Custom JS |=====----->
+<script src = "egoista.js" ></script >
+
+</body >
+<!--==============================|   BODY END   |==============================-->
+</html >

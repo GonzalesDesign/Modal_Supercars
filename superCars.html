@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html >
+<head lang = "en" >
+  <!--<meta charset = "UTF-8" >-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title >Grid Layout Template: Super Cars</title >
+
+  <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+  <!-----=====| Bootstrap CSS |=====----->
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" >
+  <!-----=====| Fonts CSS |=====----->
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel" rel = "stylesheet" type = "text/css" >
+  <link href = 'https://fonts.googleapis.com/css?family=Cinzel:400,700' rel = 'stylesheet' type = 'text/css' >
+  <link href = 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel = 'stylesheet' type = 'text/css' >
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <!-----=====| Custom CSS |=====----->
+  <link rel = "stylesheet" href = "superCars.css" />
+
+  <!--==============================| INLINE STYLE |==============================-->
+
+
+</head >
+<!--==============================|   BODY START   |==============================-->
+<body >
+
+<!-----=====| Top Banner: Header and descriptions |=====----->
+<div class = "container-fluid" >
+  <div class = "row" >
+    <div class = "col-sm-12" >
+      <div class="headerBikeBG">
+        <!--<img src = "images/blackBike.jpg" alt = "" />-->
+      </div>
+    </div >
+  </div >
+  </div>
+<div class = "container" >
+  <div class = "row" >
+    <div class = "col-sm-12" >
+      <h1 >SUPERCARS</h1 >
+    </div >
+    <div class = "col-sm-12" >
+      <h3 >Lamborghini Lineup</h3 >
+    </div >
+  </div >
+  <div class = "row" >
+    <div class = "col-sm-6" >
+      <p >
+        Ferruccio Lamborghini already had two factories in Italy, one producing tractors and the other air conditioners, when he decided to take on Enzo Ferrari in the automotive realm. Lamborghini felt that Ferrari's cars were too Spartan, too noisy, and too close to the track cars. He wanted to build performance cars with interior refinements that equaled the technology of the engine.
+        <br /><br />
+      </p >
+
+      <h4 >Lamborghini Lineup</h4 >
+      <p>
+        In 1963, Lamborghini started production on his dream cars, with the 350 GTV making its debut at the Turin auto show that year.
+      </p >
+    </div >
+    <div class = "col-sm-6" >
+      <p >
+        Ferruccio Lamborghini already had two factories in Italy, one producing tractors and the other air conditioners, when he decided to take on Enzo Ferrari in the automotive realm. Lamborghini felt that Ferrari's cars were too Spartan, too noisy, and too close to the track cars. He wanted to build performance cars with interior refinements that equaled the technology of the engine.
+        <br /><br />
+        In 1963, Lamborghini started production on his dream cars, with the 350 GTV making its debut at the Turin auto show that year.
+      </p >
+    </div >
+  </div >
+</div >
+
+<!-----=====| Grid Layout: Dynamically Populated |=====----->
+<div class = "container" >
+  <div class = "row" >
+    <div class = "col-md-12" id = "imagesContainer" >
+      <!-- Images dynamically place here -->
+      <!--<div class = "imgClass" ></div>-->
+    </div >
+
+  </div >
+</div >
+
+<!-----=====| Modal with Carousel |=====----->
+<div tabindex = "-1" class = "modal fade" id = "myModal" role = "dialog" aria-hidden = "true" aria-labelledby =
+  "myModalLabel" >
+  <div class = "modal-dialog" >
+    <div class = "modal-content" >
+
+      <!------------=====| Modal Header |=====------------>
+      <!--<div class = "modal-header" >
+        &lt;!&ndash;<button class = "close" type = "button" data-dismiss = "modal" ><i class = "glyphicon glyphicon-remove-circle" ></i >
+        </button >&ndash;&gt;
+        &lt;!&ndash;<h3 class = "modal-title" >MODAL TITLE</h3 >&ndash;&gt;
+      </div >-->
+
+      <!------------=====| Modal Body with Carousel |=====------------>
+      <div class = "container-fluid" >
+        <div class = "modal-body" id = "modalImgId" >
+          <button class = "close" type = "button" data-dismiss = "modal" >
+            <!--<span class="closeText">X</span>-->
+            <i class = "glyphicon glyphicon-remove-circle" ></i >
+          </button >
+          <!--| Carousel |-->
+          <div class = "carousel" id = "modalCarousel" >
+            <div class = "carousel-inner" role = "listbox" id = "carouslInnerId" >
+              <!--carousel-inner gets populated dynamically-->
+              <!--<div class="item active">
+                <img src = "images/bikerChix20.jpg" alt = "Biker Chicks" />
+                <div class="carousel-caption">Biker 9</div>
+              </div>-->
+              <!--<div class="item">
+                <img src = "images/bikerChix1.jpg" alt = "Biker Chicks" />
+                <div class="carousel-caption">Biker 10</div>
+              </div>-->
+
+            </div >
+            <!-- Navigation -->
+            <!--<a class="carousel-control left" href="#modalCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#modalCarousel" data-slide="next">&rsaquo;</a>-->
+
+            <a class = "carousel-control left" href = "#modalCarousel" data-slide = "prev" >
+              <i class = "glyphicon glyphicon-chevron-left" ></i >
+              <!--<span class="arrowText">&lsaquo;</span>-->
+            </a >
+            <a class = "carousel-control right" href = "#modalCarousel" data-slide = "next" >
+              <i class = "glyphicon glyphicon-chevron-right" ></i >
+              <!--<span class="arrowText">&rsaquo;</span>-->
+            </a >
+          </div >
+        </div >
+      </div >
+
+      <!------------=====| Modal Footer |=====------------>
+      <!--<div class="modal-footer">
+        <h5 class = "modal-description footer" >Modal Description</h5 >
+      </div>-->
+    </div >
+  </div >
+</div >
+
+
+<!--============================================| JAVASCRIPTS |============================================-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script >
+<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" ></script >
+<!-----=====| GSAP TweenMax and PlugIns: Nov 23, 2015 |=====----->
+<!--<script src = "http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>-->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ColorPropsPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSRulePlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/EaselPlugin.min.js" ></script >
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/TextPlugin.min.js" ></script >
+<!-----=====| Custom JS |=====----->
+<script src = "superCars.js" ></script >
+
+</body >
+<!--==============================|   BODY END   |==============================-->
+</html >
